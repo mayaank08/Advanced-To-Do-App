@@ -11,6 +11,9 @@ This is an advanced React-based To-Do application with API integration, Redux st
 - State Management using Redux
 - API Integration for Backend Operations
 
+## Live Deployment
+Visit the site here - sparkly-halva-9f6453.netlify.app
+
 ## Installation
 1. Clone the repository:
     ```bash
@@ -37,6 +40,10 @@ This is an advanced React-based To-Do application with API integration, Redux st
 - `npm run build` - Builds the app for production.
 - `npm test` - Runs unit tests.
 - `npm run lint` - Runs ESLint for code quality.
+
+## Login Steps
+- `Username` - Enter "user".
+- `Password` - Enter "pass".
 
 ## Contributing
 Feel free to submit issues or pull requests on [GitHub](https://github.com/mayaank08/todo-app).
