@@ -1,25 +1,39 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import { logout } from './redux/actions/authActions';
+import Login from './components/Login';
+import TaskInput from './components/TaskInput';
+import TaskList from './components/TaskList';
+import { Container, Navbar, Button } from 'react-bootstrap';
 
-function App() {
+const App = () => {
+  const isAuthenticated = useSelector(state => state.auth.isAuthenticated);
+  const dispatch = useDispatch();
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Navbar bg="dark" variant="dark" expand="lg">
+        <Container>
+          <Navbar.Brand>Advanced To-Do App</Navbar.Brand>
+          {isAuthenticated && (
+            <Button variant="outline-light" onClick={() => dispatch(logout())}>
+              Logout
+            </Button>
+          )}
+        </Container>
+      </Navbar>
+      <Container className="mt-4">
+        {isAuthenticated ? (
+          <>
+            <TaskInput />
+            <TaskList />
+          </>
+        ) : (
+          <Login />
+        )}
+      </Container>
     </div>
   );
-}
+};
 
 export default App;
