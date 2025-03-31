@@ -1,70 +1,48 @@
-# Getting Started with Create React App
+# To-Do App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is an advanced React-based To-Do application with API integration, Redux state management, user authentication, responsive design, and additional features like task prioritization and persistent storage.
 
-## Available Scripts
+## Features
+- User Authentication (Login/Logout)
+- Create, Edit, and Delete Tasks
+- Task Prioritization
+- Persistent Task Storage
+- Responsive UI
+- State Management using Redux
+- API Integration for Backend Operations
 
-In the project directory, you can run:
+## Project Structure
+todo-app/ ├── node_modules/ # Dependencies installed via npm ├── public/ # Static files │ ├── index.html # Main HTML file │ ├── favicon.ico # Icon for the app │ └── manifest.json # Web app manifest ├── src/ # Source code │ ├── components/ # React components │ │ ├── Login.js # Login form component │ │ ├── TaskInput.js # Task input component │ │ └── TaskList.js # Task list display component │ ├── redux/ # Redux-related files │ │ ├── actions/ # Action creators │ │ │ ├── authActions.js # Authentication actions │ │ │ └── taskActions.js # Task-related actions │ │ ├── reducers/ # Reducers for state management │ │ │ ├── authReducer.js # Manages auth state │ │ │ ├── taskReducer.js # Manages task state │ │ │ └── index.js # Combines reducers │ │ └── store.js # Redux store configuration │ ├── App.js # Main app component │ ├── index.js # Entry point, connects Redux to React │ └── App.css # Optional custom CSS ├── .env # Environment variables (e.g., API key) ├── .gitignore # Files to ignore in Git ├── package.json # Project metadata and dependencies ├── README.md # Project documentation └── build/ # Compiled output after npm run build
 
-### `npm start`
+## Installation
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/your-repo/todo-app.git
+    cd todo-app
+    ```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+2. Install dependencies:
+    ```bash
+    npm install
+    ```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+3. Create a `.env` file in the root directory and configure environment variables like API URL and keys.
 
-### `npm test`
+4. Start the application:
+    ```bash
+    npm start
+    ```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+5. Access the app at `http://localhost:3000`.
 
-### `npm run build`
+## Scripts
+- `npm start` - Runs the app in development mode.
+- `npm run build` - Builds the app for production.
+- `npm test` - Runs unit tests.
+- `npm run lint` - Runs ESLint for code quality.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Contributing
+Feel free to submit issues or pull requests on [GitHub](https://github.com/your-repo/todo-app).
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## License
+This project is licensed under the MIT License. See the LICENSE file for details.
