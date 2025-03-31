@@ -12,7 +12,7 @@ This is an advanced React-based To-Do application with API integration, Redux st
 - API Integration for Backend Operations
 
 ## Live Deployment
-Visit the site here - sparkly-halva-9f6453.netlify.app
+[Visit the site here](https://sparkly-halva-9f6453.netlify.app)
 
 ## Installation
 1. Clone the repository:
