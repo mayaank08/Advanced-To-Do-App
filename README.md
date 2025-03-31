@@ -12,7 +12,34 @@ This is an advanced React-based To-Do application with API integration, Redux st
 - API Integration for Backend Operations
 
 ## Project Structure
-todo-app/ ├── node_modules/ # Dependencies installed via npm ├── public/ # Static files │ ├── index.html # Main HTML file │ ├── favicon.ico # Icon for the app │ └── manifest.json # Web app manifest ├── src/ # Source code │ ├── components/ # React components │ │ ├── Login.js # Login form component │ │ ├── TaskInput.js # Task input component │ │ └── TaskList.js # Task list display component │ ├── redux/ # Redux-related files │ │ ├── actions/ # Action creators │ │ │ ├── authActions.js # Authentication actions │ │ │ └── taskActions.js # Task-related actions │ │ ├── reducers/ # Reducers for state management │ │ │ ├── authReducer.js # Manages auth state │ │ │ ├── taskReducer.js # Manages task state │ │ │ └── index.js # Combines reducers │ │ └── store.js # Redux store configuration │ ├── App.js # Main app component │ ├── index.js # Entry point, connects Redux to React │ └── App.css # Optional custom CSS ├── .env # Environment variables (e.g., API key) ├── .gitignore # Files to ignore in Git ├── package.json # Project metadata and dependencies ├── README.md # Project documentation └── build/ # Compiled output after npm run build
+todo-app/
+├── node_modules/            # Dependencies installed via npm
+├── public/                  # Static files
+│   ├── index.html           # Main HTML file
+│   ├── favicon.ico          # Icon for the app
+│   └── manifest.json        # Web app manifest
+├── src/                     # Source code
+│   ├── components/          # React components
+│   │   ├── Login.js         # Login form component
+│   │   ├── TaskInput.js     # Task input component
+│   │   └── TaskList.js      # Task list display component
+│   ├── redux/               # Redux-related files
+│   │   ├── actions/         # Action creators
+│   │   │   ├── authActions.js  # Authentication actions
+│   │   │   └── taskActions.js  # Task-related actions
+│   │   ├── reducers/        # Reducers for state management
+│   │   │   ├── authReducer.js  # Manages auth state
+│   │   │   ├── taskReducer.js  # Manages task state
+│   │   │   └── index.js     # Combines reducers
+│   │   └── store.js         # Redux store configuration
+│   ├── App.js               # Main app component
+│   ├── index.js             # Entry point, connects Redux to React
+│   └── App.css              # Optional custom CSS
+├── .env                     # Environment variables (e.g., API key)
+├── .gitignore               # Files to ignore in Git
+├── package.json             # Project metadata and dependencies
+├── README.md                # Project documentation
+└── build/                   # Compiled output after `npm run build`
 
 ## Installation
 1. Clone the repository:
